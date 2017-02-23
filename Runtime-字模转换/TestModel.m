@@ -7,7 +7,15 @@
 //
 
 #import "TestModel.h"
+#import "NSObject+BaseModel.h"
+
 
 @implementation TestModel
+
+// JSON 数据中有数组要转模型，需实现这个协议
++ (NSDictionary *)arrayContainModelClass {
+    return @{@"modelArr":@"TestModel"};
+}
+
 
 @end

@@ -10,4 +10,9 @@
 
 @interface TestModel : NSObject
 
+@property (copy, nonatomic) NSString *name;
+@property (copy, nonatomic) NSString *age;
+@property (strong, nonatomic) TestModel *dic;
+@property (strong, nonatomic) NSArray *modelArr;
+
 @end

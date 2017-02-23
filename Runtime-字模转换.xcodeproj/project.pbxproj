@@ -15,6 +15,8 @@
 		18220E751E5D69D90030382E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18220E731E5D69D90030382E /* LaunchScreen.storyboard */; };
 		18220E801E5D69D90030382E /* Runtime_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18220E7F1E5D69D90030382E /* Runtime_____Tests.m */; };
 		18220E8B1E5D69D90030382E /* Runtime_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18220E8A1E5D69D90030382E /* Runtime_____UITests.m */; };
+		182BDAA81E5E9079004F7087 /* NSObject+BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BDAA51E5E9079004F7087 /* NSObject+BaseModel.m */; };
+		182BDAA91E5E9079004F7087 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BDAA71E5E9079004F7087 /* TestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		18220E861E5D69D90030382E /* Runtime-字模转换UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Runtime-字模转换UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18220E8A1E5D69D90030382E /* Runtime_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Runtime_____UITests.m"; sourceTree = "<group>"; };
 		18220E8C1E5D69D90030382E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182BDAA41E5E9079004F7087 /* NSObject+BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BaseModel.h"; sourceTree = "<group>"; };
+		182BDAA51E5E9079004F7087 /* NSObject+BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BaseModel.m"; sourceTree = "<group>"; };
+		182BDAA61E5E9079004F7087 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		182BDAA71E5E9079004F7087 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 		18220E651E5D69D90030382E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				182BDAA41E5E9079004F7087 /* NSObject+BaseModel.h */,
+				182BDAA51E5E9079004F7087 /* NSObject+BaseModel.m */,
+				182BDAA61E5E9079004F7087 /* TestModel.h */,
+				182BDAA71E5E9079004F7087 /* TestModel.m */,
 				18220E661E5D69D90030382E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -274,7 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18220E6D1E5D69D90030382E /* ViewController.m in Sources */,
+				182BDAA91E5E9079004F7087 /* TestModel.m in Sources */,
 				18220E6A1E5D69D90030382E /* AppDelegate.m in Sources */,
+				182BDAA81E5E9079004F7087 /* NSObject+BaseModel.m in Sources */,
 				18220E671E5D69D90030382E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +517,7 @@
 				18220E911E5D69D90030382E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18220E921E5D69D90030382E /* Build configuration list for PBXNativeTarget "Runtime-字模转换Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				18220E941E5D69D90030382E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18220E951E5D69D90030382E /* Build configuration list for PBXNativeTarget "Runtime-字模转换UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				18220E971E5D69D90030382E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+BaseModel.h"
+#import "TestModel.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSDictionary *dic  = @{@"name":@"张三",@"age":@"18",
+                           @"dic":@{@"name":@"李四",@"age":@"20"},
+                           @"modelArr":@[@{@"name":@"王五",@"age":@"30"},
+                                         @{@"name":@"刘能",@"age":@"30"}]};
+    
+    TestModel *model =  [TestModel modelWithDic:dic];
+    NSLog(@"%@ + %@",model.age,model.name);
+    NSLog(@"%@ + %@",model.dic.age,model.dic.name);
+    
+    for (NSUInteger i=0,n = model.modelArr.count; i < n; i ++) {
+        TestModel *m = model.modelArr[i];
+        NSLog(@"%@ + %@",m.age,m.name);
+    }
 }
 
 

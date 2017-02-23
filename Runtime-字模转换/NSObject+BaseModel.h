@@ -10,4 +10,9 @@
 
 @interface NSObject (BaseModel)
 
++ (instancetype)modelWithDic:(NSDictionary *)dic;
+
+
++ (NSDictionary *)arrayContainModelClass;
+
 @end
